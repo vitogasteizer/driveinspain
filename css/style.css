@@ -1,0 +1,111 @@
+:root{--bg:#f4f6f2;--ink:#18251f;--muted:#66736c;--green:#176b4a;--lime:#d9f36a;--line:#e4e9e3;--dark:#10231d;--shadow:0 12px 32px #14271b0c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Noto Sans Georgian",system-ui,sans-serif}
+a{color:var(--green)}
+[hidden]{display:none !important}
+main,footer,.hero,.topbar{max-width:720px;margin:0 auto;padding-left:16px;padding-right:16px}
+.muted{color:var(--muted);font-size:13px;margin:0 0 12px}
+
+/* ზედა ზოლი */
+.topbar{position:sticky;top:0;z-index:20;background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{font-weight:800;letter-spacing:.3px}
+.brand span{color:var(--lime)}
+.menu-btn{background:transparent;border:1px solid #ffffff40;border-radius:10px;width:44px;height:44px;cursor:pointer;display:grid;place-items:center;padding:0}
+.menu-btn span{display:block;width:20px;height:2px;background:#fff;box-shadow:0 6px 0 #fff,0 -6px 0 #fff}
+
+/* მენიუ — ზემოდან ჩამოიშლება */
+.menu-overlay{position:fixed;inset:0;background:#07130f80;z-index:50}
+.menu{position:fixed;top:0;left:0;right:0;z-index:60;max-width:720px;margin:0 auto;background:#fff;border-bottom:1px solid var(--line);border-radius:0 0 22px 22px;box-shadow:0 16px 40px #0a1a1266;max-height:85vh;overflow-y:auto;padding:14px 16px 18px}
+.menu-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.menu-group{font-size:11px;font-weight:800;letter-spacing:1.2px;color:var(--green);padding:10px 4px 4px}
+.menu a{display:block;padding:12px 10px;border-radius:10px;text-decoration:none;font-weight:600;color:var(--ink)}
+.menu a:hover{background:var(--bg)}
+.close-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:22px;cursor:pointer}
+
+/* სათაური */
+.hero{padding-top:28px;padding-bottom:28px;background:var(--dark);color:#fff;border-radius:0 0 28px 28px;margin-bottom:8px}
+.eyebrow{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:1.5px}
+.hero h1{font-size:34px;line-height:1.1;margin:10px 0 12px;letter-spacing:-.8px}
+.hero p{margin:0;color:#d1ddd5;font-size:15px}
+.quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:20px}
+.quick a{background:#ffffff12;border:1px solid #ffffff20;border-radius:14px;padding:12px 6px;color:#fff;text-decoration:none;text-align:center;font-size:12px;font-weight:700}
+
+/* სექციები */
+.sec{padding-top:32px}
+.sec h2{font-size:24px;margin:0 0 12px;letter-spacing:-.4px}
+.sub-h{font-size:17px;margin:20px 0 8px}
+.cards{display:grid;gap:10px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+.card h3{margin:8px 0 4px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card.row{display:flex;gap:12px;align-items:center}
+.badge{display:inline-block;border-radius:7px;padding:4px 10px;color:#fff;font-weight:800}
+.b-blue{background:#1465a6}.b-red{background:#c43e36}.b-orange{background:#f1a13b;color:#17231d}
+
+.callout{background:#e9f3ec;border:1px solid #d4e6d9;border-radius:16px;padding:14px;margin-top:12px;font-size:14px}
+.callout b{color:#155c3e}
+.callout.warn{background:#fff1e9;border-color:#f2d7c9}
+.callout.warn b{color:#a23c28}
+.callout p{margin:8px 0 0}
+.src{margin:10px 0 0;font-size:13px}
+
+.dark-panel{background:var(--dark);color:#fff;border-radius:20px;padding:18px}
+.dark-panel h3{margin:0 0 8px;font-size:19px}
+.dark-panel p{margin:0 0 8px;color:#cfdbd2;font-size:14px}
+.hl{color:var(--lime)}
+
+.labels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.label{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px 4px;text-align:center}
+.label b{font-size:12px}
+.sticker{width:46px;height:46px;margin:0 auto 6px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:900;font-size:12px}
+.round{width:46px;height:46px;flex:0 0 46px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:900;font-size:11px}
+.round.ring{background:#fff;color:#18251f;border:5px solid #c9342f}
+.sq{width:46px;height:46px;flex:0 0 46px;background:#1765a5;border-radius:8px;color:#fff;display:grid;place-items:center;font-weight:900}
+
+/* პარკირება */
+.color-head{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.color-head b{font-size:15px}
+.pill{flex:0 0 auto;min-width:64px;height:34px;padding:0 10px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.card p{color:#3b4a42}
+.photo-btn{display:block;width:100%;margin-top:10px;padding:0;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:#e8eee9}
+.photo-btn img{display:block;width:100%;height:150px;object-fit:cover}
+.photo-empty{margin-top:10px;border:1px dashed #b9c4bc;border-radius:12px;padding:14px;font-size:12px;color:var(--muted);text-align:center}
+
+/* OTA */
+.status-box{background:var(--dark);color:#fff;border-radius:14px;padding:14px 16px;font-size:15px}
+.status-box b{color:var(--lime)}
+.status-note{font-size:12px;color:#cfdbd2;margin-top:6px}
+.callout .sub{font-size:14px;font-weight:800;margin-bottom:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:14px;margin-bottom:12px}
+.mini{background:#fff;border-radius:12px;padding:10px}
+
+/* ლექსიკონი და სიტუაციები — გასაშლელი */
+.acc{display:grid;gap:8px}
+.acc-item,.acc details,details.acc-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+details>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:800;font-size:15px}
+details>summary::-webkit-details-marker{display:none}
+details>summary .es{display:block;color:var(--green);font-weight:800;font-size:14px}
+details>summary>span>span{font-size:14px;font-weight:400}
+.plus{font-size:20px;color:var(--muted)}
+.acc-body{margin-top:10px;font-size:14px;color:#3b4a42}
+.acc-body p{margin:0 0 8px}
+.acc-body .src{margin-top:8px}
+
+/* საგანგებო */
+.emerg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.emerg a{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;text-decoration:none;color:var(--ink)}
+.emerg b{display:block;font-size:26px;color:var(--green)}
+.emerg span{font-size:12px;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;padding-bottom:80px;color:var(--muted);font-size:12px}
+footer b{color:var(--ink)}
+footer p{margin:6px 0 0}
+
+/* ზემოთ ღილაკი */
+.to-top{position:fixed;right:16px;bottom:16px;z-index:40;background:var(--lime);color:#18251f;text-decoration:none;font-weight:900;border-radius:99px;padding:12px 17px;box-shadow:0 8px 25px #0002;font-size:13px}
+
+/* ფოტოს გადიდება */
+.lightbox{position:fixed;inset:0;background:#07130fee;z-index:100;display:flex;align-items:center;justify-content:center;padding:16px}
+.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:12px}
+.lb-close{position:absolute;top:14px;right:14px;background:#fff;color:#14231b;font-size:24px}
