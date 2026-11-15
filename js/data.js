@@ -20,7 +20,7 @@ const PARKING_COLORS = [
     label: "ლურჯი",
     style: "background:#1765a5;color:#fff",
     desc: "ფასიანი ან დროით შეზღუდული პარკირება. საჭიროა ბილეთი ან აპლიკაცია. ვიტორიაში ლურჯი ზოლი (Rotación) მოკლე პარკირებაა: ჩვეულებრივ მაქს. 90 წთ, ბილეთით.",
-    img: "",
+    img: "images/zonaazul.jpg",
     alt: "ლურჯი ზონა"
   },
   {
@@ -28,7 +28,7 @@ const PARKING_COLORS = [
     label: "მწვანე",
     style: "background:#4a9b61;color:#fff",
     desc: "ხშირად ადგილობრივი მცხოვრებლებისთვისაა. ვიტორიაში მწვანე ზოლი — რეზიდენტის ზონა: რეზიდენტს ნებართვით ულიმიტოდ, სხვას ბილეთით (თუ ადგილი ZBE-ის სპეციალურ ზონაში არ არის).",
-    img: "https://estaticosgn-cdn.deia.eus/clip/8acb152a-e77d-40bb-a3de-23588b8881a3_16-9-discover-aspect-ratio_default_0.jpg",
+    img: "images/verde.jpg",
     alt: "ვიტორიაში მწვანე OTA ზოლი"
   },
   {
@@ -36,7 +36,7 @@ const PARKING_COLORS = [
     label: "მწვანე/წითელი",
     style: "background:linear-gradient(90deg,#4a9b61 50%,#c83d38 50%);color:#fff",
     desc: "ვიტორიაში მხოლოდ შესაბამისი ზონის რეზიდენტის OTA ნებართვით. შეზღუდვა 24/7 მოქმედებს.",
-    img: "https://blogs.vitoria-gasteiz.org/medios/files/2020/08/OTA-2.jpg",
+    img: "images/rojoverde.jpg",
     alt: "ვიტორიაში მწვანე და წითელი OTA ზოლი"
   },
   {
@@ -52,7 +52,7 @@ const PARKING_COLORS = [
     label: "ყვითელი",
     style: "background:#f0d23e;color:#26352c",
     desc: "კრძალავს გაჩერებასაც და პარკირებასაც. წყვეტილი ყვითელი — მხოლოდ პარკირებას. დროითი პირობები ნიშანზე ეწერება.",
-    img: "",
+    img: "images/líneaamarilla.jpg",
     alt: "ყვითელი ხაზი"
   },
   {
@@ -60,7 +60,7 @@ const PARKING_COLORS = [
     label: "ზიგზაგი",
     style: "background:#f2a13b;color:#26352c",
     desc: "ავტობუსის გაჩერება ან დატვირთვა-გადმოტვირთვა. ჩვეულებრივი მანქანით პარკირება აკრძალულია.",
-    img: "",
+    img: "images/líneabuses.jpg",
     alt: "ყვითელი ზიგზაგი"
   }
 ];
